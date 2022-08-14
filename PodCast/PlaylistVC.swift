@@ -9,21 +9,39 @@ import UIKit
 
 class PlaylistVC: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var songs: [SongModel]=[
+    SongModel(title: "aaa", singer: "bbb", time: "22:00"),
+    SongModel(title: "moas", singer: "mosalah", time: "22:00"),
+    SongModel(title: "bbbb", singer: "fff", time: "22:00"),
+    SongModel(title: "fgfg", singer: "fgf", time: "22:00"),
+    SongModel(title: "fgfgffg", singer: "bbb", time: "22:00"),
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func backButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
     }
-    */
+}
 
+extension PlaylistVC: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SongItem
+        cell.title.text = songs[indexPath.row].title
+        cell.singer.text = songs[indexPath.row].singer
+        cell.time.text = songs[indexPath.row].time
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return songs.count
+    }
+   
+    
 }

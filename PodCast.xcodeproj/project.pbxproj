@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1ABE7C928A94A8400395051 /* PlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ABE7C828A94A8400395051 /* PlaylistVC.swift */; };
+		C1ABE7CB28A94F5A00395051 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ABE7CA28A94F5A00395051 /* SongModel.swift */; };
+		C1ABE7CD28A99AF600395051 /* SongItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ABE7CC28A99AF600395051 /* SongItem.swift */; };
 		C1C6855928A8778200A31F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C6855828A8778200A31F3A /* AppDelegate.swift */; };
 		C1C6855B28A8778200A31F3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C6855A28A8778200A31F3A /* SceneDelegate.swift */; };
 		C1C6855D28A8778200A31F3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C6855C28A8778200A31F3A /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1ABE7C828A94A8400395051 /* PlaylistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistVC.swift; sourceTree = "<group>"; };
+		C1ABE7CA28A94F5A00395051 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		C1ABE7CC28A99AF600395051 /* SongItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongItem.swift; sourceTree = "<group>"; };
 		C1C6855528A8778200A31F3A /* PodCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C6855828A8778200A31F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1C6855A28A8778200A31F3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				C1C6856128A8778800A31F3A /* Assets.xcassets */,
 				C1C6856328A8778800A31F3A /* LaunchScreen.storyboard */,
 				C1C6856628A8778800A31F3A /* Info.plist */,
+				C1ABE7C828A94A8400395051 /* PlaylistVC.swift */,
+				C1ABE7CA28A94F5A00395051 /* SongModel.swift */,
+				C1ABE7CC28A99AF600395051 /* SongItem.swift */,
 			);
 			path = PodCast;
 			sourceTree = "<group>";
@@ -139,7 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1C6855D28A8778200A31F3A /* ViewController.swift in Sources */,
+				C1ABE7CD28A99AF600395051 /* SongItem.swift in Sources */,
+				C1ABE7CB28A94F5A00395051 /* SongModel.swift in Sources */,
 				C1C6855928A8778200A31F3A /* AppDelegate.swift in Sources */,
+				C1ABE7C928A94A8400395051 /* PlaylistVC.swift in Sources */,
 				C1C6855B28A8778200A31F3A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

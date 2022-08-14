@@ -6,3 +6,8 @@
 //
 
 import Foundation
+struct SongModel{
+    let title: String
+    let singer: String
+    let time: String
+}
