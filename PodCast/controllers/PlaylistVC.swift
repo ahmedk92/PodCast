@@ -32,7 +32,7 @@ class PlaylistVC: UIViewController {
 
 extension PlaylistVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SongItem
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SongItemTableViewCell
         cell.title.text = songs[indexPath.row].title
         cell.singer.text = songs[indexPath.row].singer
         cell.time.text = songs[indexPath.row].time
