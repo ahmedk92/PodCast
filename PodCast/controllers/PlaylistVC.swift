@@ -20,7 +20,7 @@ class PlaylistVC: UIViewController {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.register(.init(nibName: "LibrarySongTableViewCell", bundle: .main), forCellReuseIdentifier: "LibrarySongTableViewCell")
         tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
@@ -32,8 +32,8 @@ class PlaylistVC: UIViewController {
 
 extension PlaylistVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SongItemTableViewCell
-        cell.title.text = songs[indexPath.row].title
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LibrarySongTableViewCell", for: indexPath) as! LibrarySongTableViewCell
+        cell.songTitle.text = songs[indexPath.row].title
         cell.singer.text = songs[indexPath.row].singer
         cell.time.text = songs[indexPath.row].time
         return cell
