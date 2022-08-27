@@ -20,6 +20,8 @@ class TopBooksVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.register(.init(nibName: "TopBooksTableViewCell", bundle: .main), forCellReuseIdentifier: "TopBooksTableViewCell")
         tableView.dataSource = self
     }
     
@@ -40,11 +42,11 @@ class TopBooksVC: UIViewController {
 }
 extension TopBooksVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BookCell", for: indexPath) as! TopBooksTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TopBooksTableViewCell", for: indexPath) as! TopBooksTableViewCell
 
         cell.bookImage.image = UIImage(named: books[indexPath.row].image)
-        cell.bookName.text = books[indexPath.row].title
-        cell.bookAuther.text = books[indexPath.row].auther
+        cell.bookNameLabel.text = books[indexPath.row].title
+        cell.bookAutherLabel.text = books[indexPath.row].auther
         return cell
     }
     

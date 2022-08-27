@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopBooksTableViewCell" rowHeight="91" id="KGk-i7-Jjw" customClass="TopBooksTableViewCell" customModule="PodCast" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="425" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51v-4i-SQL">
+                        <rect key="frame" x="0.0" y="0.0" width="425" height="91"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pql-Ei-3mE">
+                                <rect key="frame" x="20" y="10" width="385" height="71"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bwc-2P-an8" userLabel="leading">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="71"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eight" translatesAutoresizingMaskIntoConstraints="NO" id="VgH-zw-ZkO">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="71"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="VgH-zw-ZkO" secondAttribute="bottom" id="2ge-9q-s2z"/>
+                                            <constraint firstItem="VgH-zw-ZkO" firstAttribute="top" secondItem="Bwc-2P-an8" secondAttribute="top" id="4dc-YS-HV4"/>
+                                            <constraint firstAttribute="trailing" secondItem="VgH-zw-ZkO" secondAttribute="trailing" id="Ca4-vn-LeZ"/>
+                                            <constraint firstItem="VgH-zw-ZkO" firstAttribute="leading" secondItem="Bwc-2P-an8" secondAttribute="leading" id="xyp-WG-67R"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQb-3M-Qnt" userLabel="body">
+                                        <rect key="frame" x="77" y="0.0" width="231" height="71"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="l3g-vX-ugm">
+                                                <rect key="frame" x="10" y="0.0" width="211" height="71"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRW-0u-jgG" userLabel="BookName">
+                                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="35.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFe-gB-6jU" userLabel="BookAuther">
+                                                        <rect key="frame" x="0.0" y="35.5" width="41.5" height="35.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="l3g-vX-ugm" firstAttribute="leading" secondItem="EQb-3M-Qnt" secondAttribute="leading" constant="10" id="8nI-K2-JYp"/>
+                                            <constraint firstAttribute="trailing" secondItem="l3g-vX-ugm" secondAttribute="trailing" constant="10" id="BaA-lf-tSh"/>
+                                            <constraint firstAttribute="bottom" secondItem="l3g-vX-ugm" secondAttribute="bottom" id="DWt-Hp-Rxb"/>
+                                            <constraint firstItem="l3g-vX-ugm" firstAttribute="top" secondItem="EQb-3M-Qnt" secondAttribute="top" id="vSj-kp-ZKu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I02-tv-MJr" userLabel="trailing">
+                                        <rect key="frame" x="308" y="0.0" width="77" height="71"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="J4y-4W-fci">
+                                                <rect key="frame" x="27.5" y="22" width="22.5" height="27"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="J4y-4W-fci" firstAttribute="centerX" secondItem="I02-tv-MJr" secondAttribute="centerX" id="G6p-SR-gTY"/>
+                                            <constraint firstItem="J4y-4W-fci" firstAttribute="centerY" secondItem="I02-tv-MJr" secondAttribute="centerY" id="RyI-hA-Z0Z"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Bwc-2P-an8" firstAttribute="width" secondItem="Pql-Ei-3mE" secondAttribute="width" multiplier="0.2" id="0mu-Dc-tcN"/>
+                                    <constraint firstItem="I02-tv-MJr" firstAttribute="width" secondItem="Pql-Ei-3mE" secondAttribute="width" multiplier="0.2" id="QPI-x8-Qki"/>
+                                    <constraint firstItem="EQb-3M-Qnt" firstAttribute="width" secondItem="Pql-Ei-3mE" secondAttribute="width" multiplier="0.6" id="dFR-Dx-j3A"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pql-Ei-3mE" firstAttribute="top" secondItem="51v-4i-SQL" secondAttribute="top" constant="10" id="ViN-lv-JDx"/>
+                            <constraint firstItem="Pql-Ei-3mE" firstAttribute="leading" secondItem="51v-4i-SQL" secondAttribute="leading" constant="20" id="YdO-hN-07v"/>
+                            <constraint firstAttribute="bottom" secondItem="Pql-Ei-3mE" secondAttribute="bottom" constant="10" id="d9a-Cc-LKa"/>
+                            <constraint firstAttribute="trailing" secondItem="Pql-Ei-3mE" secondAttribute="trailing" constant="20" id="ro8-Kk-sa2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="51v-4i-SQL" secondAttribute="trailing" id="5cY-WG-ExS"/>
+                    <constraint firstItem="51v-4i-SQL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TJo-to-bVY"/>
+                    <constraint firstAttribute="bottom" secondItem="51v-4i-SQL" secondAttribute="bottom" id="klS-b3-2er"/>
+                    <constraint firstItem="51v-4i-SQL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vkg-5F-Gss"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bookAutherLabel" destination="rFe-gB-6jU" id="SeQ-aB-Pjg"/>
+                <outlet property="bookImage" destination="VgH-zw-ZkO" id="Zt3-GB-ZBx"/>
+                <outlet property="bookNameLabel" destination="kRW-0u-jgG" id="CJy-y6-7GO"/>
+                <outlet property="markImage" destination="J4y-4W-fci" id="AWm-FC-YWq"/>
+            </connections>
+            <point key="canvasLocation" x="207.97101449275365" y="79.352678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="eight" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
