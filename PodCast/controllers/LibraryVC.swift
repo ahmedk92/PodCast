@@ -30,6 +30,7 @@ class LibraryVC: UIViewController {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(.init(nibName: "LibrarySongTableViewCell", bundle: .main), forCellReuseIdentifier: "LibrarySongTableViewCell")
         tableView.dataSource = self
         collectionView.dataSource = self
 
@@ -46,7 +47,7 @@ class LibraryVC: UIViewController {
 }
 extension LibraryVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LibraryCell", for: indexPath) as! LibrarySongTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LibrarySongTableViewCell", for: indexPath) as! LibrarySongTableViewCell
         cell.songTitle.text = songs[indexPath.row].title
         cell.singer.text = songs[indexPath.row].singer
         cell.time.text = songs[indexPath.row].time
