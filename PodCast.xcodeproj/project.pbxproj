@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28C022FD28BA9EB100F4B645 /* LibrarySongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28C022FC28BA9EB100F4B645 /* LibrarySongTableViewCell.xib */; };
 		C1088A0A28B2DD080016DC15 /* TopBooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1088A0928B2DD080016DC15 /* TopBooksTableViewCell.swift */; };
 		C1ABE7C928A94A8400395051 /* PlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ABE7C828A94A8400395051 /* PlaylistVC.swift */; };
 		C1ABE7CB28A94F5A00395051 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ABE7CA28A94F5A00395051 /* SongModel.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28C022FC28BA9EB100F4B645 /* LibrarySongTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibrarySongTableViewCell.xib; sourceTree = "<group>"; };
 		C1088A0928B2DD080016DC15 /* TopBooksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBooksTableViewCell.swift; sourceTree = "<group>"; };
 		C1ABE7C828A94A8400395051 /* PlaylistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistVC.swift; sourceTree = "<group>"; };
 		C1ABE7CA28A94F5A00395051 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				C1C6856328A8778800A31F3A /* LaunchScreen.storyboard */,
 				C1C6856628A8778800A31F3A /* Info.plist */,
 				C1D33B6128AEBAB30075A8EC /* LibrarySongTableViewCell.swift */,
+				28C022FC28BA9EB100F4B645 /* LibrarySongTableViewCell.xib */,
 				C1ABE7CC28A99AF600395051 /* SongItemTableViewCell.swift */,
 				C1D33B5F28AEB31B0075A8EC /* NavigationControllerVC.swift */,
 				C1D33B6328AECB660075A8EC /* MyCollectionViewCell.swift */,
@@ -171,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28C022FD28BA9EB100F4B645 /* LibrarySongTableViewCell.xib in Resources */,
 				C1C6856528A8778800A31F3A /* LaunchScreen.storyboard in Resources */,
 				C1C6856228A8778800A31F3A /* Assets.xcassets in Resources */,
 				C1C6856028A8778200A31F3A /* Main.storyboard in Resources */,
