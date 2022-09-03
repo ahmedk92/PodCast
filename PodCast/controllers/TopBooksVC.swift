@@ -23,24 +23,16 @@ class TopBooksVC: UIViewController {
         
         tableView.register(.init(nibName: "TopBooksTableViewCell", bundle: .main), forCellReuseIdentifier: "TopBooksTableViewCell")
         tableView.dataSource = self
+        tableView.delegate = self
     }
     
     @IBAction func backButton(_ sender: UIBarButtonItem) {
         dismiss(animated: true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
-extension TopBooksVC: UITableViewDataSource{
+extension TopBooksVC: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TopBooksTableViewCell", for: indexPath) as! TopBooksTableViewCell
 
@@ -52,5 +44,8 @@ extension TopBooksVC: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return books.count
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "goToBookChannel", sender: self)
     }
 }

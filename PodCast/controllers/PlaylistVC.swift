@@ -22,7 +22,6 @@ class PlaylistVC: UIViewController {
         super.viewDidLoad()
         tableView.register(.init(nibName: "LibrarySongTableViewCell", bundle: .main), forCellReuseIdentifier: "LibrarySongTableViewCell")
         tableView.dataSource = self
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func backButton(_ sender: UIBarButtonItem) {
